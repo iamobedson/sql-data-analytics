@@ -24,11 +24,11 @@ Highlights:
 -- =============================================================================
 -- Create Report: gold.report_customers
 -- =============================================================================
-IF OBJECT_ID('gold.report_customers', 'V') IS NOT NULL
+IF OBJECT_ID('gold.customer_report', 'V') IS NOT NULL
     DROP VIEW gold.report_customers;
 GO
 
-CREATE VIEW gold.report_customers AS
+CREATE VIEW gold.customer_report AS
 
 WITH base_query AS(
 /*---------------------------------------------------------------------------
